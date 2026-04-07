@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALL GOUSIA TRANSPORT COMPANY GOODS</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="icon" type="image/x-icon" href="video/favicon.ico" />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Poppins',sans-serif;margin:0;padding:0;}
+
+/* NAVBAR */
+.navbar{background:#000;box-shadow:0 5px 15px rgba(0,0,0,0.5);}
+.logo{font-family:'Orbitron',sans-serif;color:#ffb400;font-size:22px;letter-spacing:2px;}
+.nav-link{color:white !important;margin-left:15px;font-weight:500;}
+.nav-link:hover{color:#ffb400 !important;}
+.navbar .lang-btn{
+    width:45px;height:45px;border-radius:50%;background:#ffb400;color:#000;
+    border:none;font-weight:bold;cursor:pointer;box-shadow:0 5px 10px rgba(0,0,0,0.3);
+    transition:0.3s;margin-left:10px;
+}
+.navbar .lang-btn:hover{background:#e6a800;}
+.discount-section{
+background:#f4a742;
+}
+
+.discount-box{
+background:#fff;
+padding:40px;
+max-width:600px;
+border:6px double #000;
+}
+
+.title{
+font-size:45px;
+font-weight:bold;
+}
+
+.subtitle{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.desc{
+font-size:18px;
+line-height:1.8;
+}
+
+.company{
+font-size:30px;
+font-weight:bold;
+margin-top:20px;
+}
+
+.date{
+font-weight:bold;
+margin-top:10px;
+}
+
+.support{
+border:2px solid #000;
+display:inline-block;
+padding:8px 20px;
+margin-top:15px;
+font-weight:bold;
+}
+
+.service{
+margin-top:10px;
+font-weight:bold;
+}
+/* HERO */
+.hero{position:relative;height:80vh;overflow:hidden;color:white;text-align:center;}
+.hero video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1;}
+.hero .overlay{position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.6);}
+.hero-content{position:relative;top:50%;transform:translateY(-50%);}
+.hero h1{font-family:'Orbitron',sans-serif;font-size:36px;font-weight:700;}
+.hero p{font-size:18px;margin-top:15px;}
+.hero .lead{font-size:20px;font-weight:500;}
+.hero .btn-lg{margin-top:20px;}
+
+/* SERVICES */
+.service-box{background:white;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:0.3s;}
+.service-box:hover{transform:translateY(-5px);}
+.icon{font-size:35px;color:#ffb400;}
+
+/* RATE TABLE */
+.table thead th{background:#ffb400;color:#000;font-weight:600;}
+.table tbody td{font-size:0.95rem;}
+
+/* CONTACT */
+.contact{background:#000;color:white;padding:40px 0;}
+.contact input,.contact textarea{border-radius:8px;}
+.contact button{border-radius:8px;font-weight:600;width:100%;}
+
+/* Stylish Contact Heading */
+.contact-heading {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  color: #ffb400;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.contact-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 50%;
+  height: 4px;
+  background: #ffb400;
+  border-radius: 2px;
+}
+
+/* FOOTER */
+.footer{
+background:black;
+color:#d1d5db;
+padding:50px 0 20px;
+}
+.footer h5{
+color:#f43f5e;
+margin-bottom:20px;
+font-weight:600;
+}
+.footer p{
+font-size:15px;
+margin-bottom:8px;
+}
+.footer-links{
+list-style:none;
+padding:0;
+}
+.footer-links li{
+margin-bottom:10px;
+}
+.footer-links a{
+text-decoration:none;
+color:#cbd5f5;
+transition:0.3s;
+}
+.footer-links a:hover{
+color:#f43f5e;
+padding-left:6px;
+}
+.social-icons{
+margin-top:15px;
+}
+.social-icons a{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:42px;
+height:42px;
+border-radius:50%;
+margin-right:10px;
+font-size:20px;
+color:#fff;
+transition:0.3s;
+}
+/* WhatsApp */
+.social-icons .whatsapp{
+background:#25D366;
+}
+/* Facebook */
+.social-icons .facebook{
+background:#1877F2;
+}
+/* Instagram */
+.social-icons .instagram{
+background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+}
+.social-icons a:hover{
+transform:translateY(-4px);
+}
+.footer-bottom{
+text-align:center;
+margin-top:30px;
+padding-top:15px;
+border-top:1px solid black;
+font-size:14px;
+color:#9ca3af;
+}
+/* WHATSAPP */
+.whatsapp-btn{position:fixed;bottom:15px;right:15px;z-index:1000;}
+.whatsapp-btn img{width:60px;height:60px;}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+
+<button class="btn btn-sm btn-light me-2" id="langToggle">Sindhi</button>
+
+<a class="navbar-brand logo" href="#">🚚 ALL GOUSIA</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" id="navHome" href="#home">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" id="navServices" href="#discount">Discount list</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" id="navAbout" href="#services">Ratelist</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" id="navContact" href="#contact">Contact</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#location">Our Location</a>
+</li>
+
+</ul>
+</div>
+
+</div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero mt-5 pt-5" id="home">
+
+<video autoplay muted loop class="w-100">
+<source src="video/WhatsApp Video 2026-03-10 at 1.47.45 AM.mp4" type="video/mp4">
+</video>
+<br><br><br><br><br>
+<div class="container text-center text-white">
+
+<h1 id="heroTitle">All Gousia Company – Your Trust, Our Responsibility 🤝🚚</h1>
+
+<p class="lead" id="heroLead">Safe, Fast and Reliable Transport Service.</p>
+
+<p id="heroDesc">
+We transport your goods and cargo safely from one place to another with fast and on-time delivery.
+Our mission is to provide our customers with the best transport service. 🚚📦
+</p>
+
+<a href="https://wa.me/923220251034?text=Hello%20All%20Gousia%20Transport,%20mujhe%20booking%20karni%20hai."
+target="_blank"
+class="btn btn-warning btn-lg mt-3"
+id="bookNow">
+Book Now
+</a>
+
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="py-5 bg-light">
+<div class="container">
+<div class="text-center mb-4"><h2 id="servicesTitle">Our Services</h2></div>
+<div class="row g-3">
+<div class="col-12 col-md-6 col-lg-4">
+<div class="service-box text-center">
+<div class="icon">🚚</div>
+<h5 id="service1">Truck Transport</h5>
+<p id="service1Desc">Fast goods delivery across cities.</p>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+<div class="service-box text-center">
+<div class="icon">📦</div>
+<h5 id="service2">Cargo Delivery</h5>
+<p id="service2Desc">Professional cargo handling.</p>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+<div class="service-box text-center">
+<div class="icon">🏭</div>
+<h5 id="service3">Warehousing</h5>
+<p id="service3Desc">Secure storage for goods.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- DISCOUNT -->
+<section class="discount-section py-5" id="discount">
+<div class="container d-flex justify-content-center">
+
+<div class="discount-box text-center">
+
+<h2 class="title">الغوثیہ</h2>
+<p class="subtitle">ہم ٹرانسپورٹ کمپنی</p>
+
+<p class="desc">
+نہایت مسرت کے ساتھ اپنے پرانے اور نئے سال کی خوشی میں ٹرانسپورٹ
+کرایہ میں <strong>30%</strong> کا زبردست اعلان کرتے ہیں۔
+پرانے اور نئے ساتھیوں سے گزارش ہے ہماری سروسز سے بھرپور فائدہ اٹھائیں۔
+</p>
+
+<h3 class="company">العفیہ ٹرانسپورٹ کمپنی</h3>
+
+<p class="date">
+آفر کی مدت: 05-01-2026 سے 11-01-2026 تک
+</p>
+
+<div class="support">
+آپ کے تعاون کے طلبگار
+</div>
+
+<p class="service">روزانہ سروس</p>
+
+<a href="#" class="btn btn-dark mt-3" onclick="checkDiscount()">ابھی بک کریں</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- RATE LIST -->
+<section class="py-5 bg-light" id="services">
+<div class="container">
+<div class="text-center mb-4"><h2 id="rateTitle">ALL Gousia Transport new Rate List on March</h2></div>
+<p class="text-center fs-4 fw-bold">
+Note: The rate list starts from 6th March.
+</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped text-center align-middle">
+    <thead class="table-dark">
+      <tr>
+        <th id="thItem">ITEMS</th>
+        <th id="thTruck">City</th>
+        <th id="thOldPrice">Old Price</th>
+        <th id="thNewPrice">New Price</th>
+        <th id="thTime">Delivery Time</th>
+      </tr>
+    </thead>
+<tbody>
+<tr>
+<td id="item1"> sakaro/baharo /garo</td>
+<td id="truck1">ketta RICE/DAL50kg</td>
+<td id="price1">PKR 140</td>
+<td id="price1">PKR 180</td>
+<td id="time1">24 hours</td>
+</tr>
+<tr>
+<td id="item2">sakaro/baharo/garo</td>
+<td id="truck2">ketta RICE/DAL25kg</td>
+<td id="price2">PKR 70</td>
+<td id="price2">PKR 90</td>
+<td id="time2">24 hours</td>
+</tr>
+<tr>
+<td id="item3">sakaro/baharo/garo</td>
+<td id="truck3">Ketta beaj or nimco</td>
+<td id="price3">PKR 120</td>
+<td id="price3">PKR 150</td>
+<td id="time3">24 hours</td>
+</tr>
+<tr>
+<td id="item4">sakaro/baharo/garo</td>
+<td id="truck4">Ketta Shopper 25kg</td>
+<td id="price4">PKR 120</td>
+<td id="price4">PKR 150</td>
+<td id="time4">24 hours</td>
+</tr>
+<tr>
+<td id="item5">sakaro/baharo/garo</td>
+<td id="truck5">ketta khajor</td>
+<td id="price5">PKR 100</td>
+<td id="price5">PKR 130</td>
+<td id="time5">24 hours</td>
+</tr>
+<tr>
+<td id="item6">sakaro/baharo/garo</td>
+<td id="truck6">bandel khajor</td>
+<td id="price6">PKR 130</td>
+<td id="price6">PKR 160</td>
+<td id="time6">24 hours</td>
+</tr>
+<tr>
+<td id="item7">sakaro/baharo/garo</td>
+<td id="truck7">bora akhbar</td>
+<td id="price7">PKR 150</td>
+<td id="price7">PKR 200</td>
+<td id="time7">24 hours</td>
+</tr>
+<tr>
+<td id="item8">sakaro/baharo/garo</td>
+<td id="truck8">bora Poli Tap</td>
+<td id="price8">PKR 250</td>
+<td id="price8">PKR 350</td>
+<td id="time8">24 hours</td>
+</tr>
+<tr>
+<td id="item9">sakaro/baharo/garo</td>
+<td id="truck9">bora lifafa kagaz theali 100kg</td>
+<td id="price9">PKR 400</td>
+<td id="price9">PKR 500</td>
+<td id="time9">24 hours</td>
+</tr>
+<tr>
+<td id="item10">sakaro/baharo/garo</td>
+<td id="truck10">bora keal</td>
+<td id="price10">PKR 120</td>
+<td id="price10">PKR 150</td>
+<td id="time10">24 hours</td>
+</tr>
+<tr>
+<td id="item11">sakaro/baharo/garo</td>
+<td id="truck11">bora tewa</td>
+<td id="price11">PKR 200</td>
+<td id="price11">PKR 250</td>
+<td id="time11">24 hours</td>
+</tr>
+<tr>
+<td id="item12">sakaro/baharo/garo</td>
+<td id="truck12">bora paper</td>
+<td id="price12">PKR 400</td>
+<td id="price12">PKR 500</td>
+<td id="time12">24 hours</td>
+</tr>
+<tr>
+<td id="item13">sakaro/baharo/garo</td>
+<td id="truck13">bandel chatai</td>
+<td id="price13">PKR 300</td>
+<td id="price13">PKR 400</td>
+<td id="time13">24 hours</td>
+</tr>
+<tr>
+<td id="item14">sakaro/baharo/garo</td>
+<td id="truck14">kartoun singli</td>
+<td id="price14">PKR 120</td>
+<td id="price14">PKR 150</td>
+<td id="time14">24 hours</td>
+</tr>
+<tr>
+<td id="item15">sakaro/baharo/garo</td>
+<td id="truck15">kartoun 2 wala</td>
+<td id="price15">PKR 150</td>
+<td id="price15">PKR 180</td>
+<td id="time15">24 hours</td>
+</tr>
+<tr>
+<td id="item16">sakaro/baharo/garo</td>
+<td id="truck16">kartoun 3/4 wala</td>
+<td id="price16">PKR 180</td>
+<td id="price16">PKR 200</td>
+<td id="time16">24 hours</td>
+</tr>
+<tr>
+<td id="item17">sakaro/baharo/garo</td>
+<td id="truck17">bandel or bora kapera</td>
+<td id="price17">PKR 400</td>
+<td id="price17">PKR 500</td>
+<td id="time17">24 hours</td>
+</tr>
+<tr>
+<td id="item18">sakaro/baharo/garo</td>
+<td id="truck18">bandel balcha khodear</td>
+<td id="price18">PKR 120</td>
+<td id="price18">PKR 150</td>
+<td id="time18">24 hours</td>
+</tr>
+<tr>
+<td id="item19">sakaro/baharo/garo</td>
+<td id="truck19">bora rasi</td>
+<td id="price19">PKR 300/400</td>
+<td id="price19">PKR 500</td>
+<td id="time19">24 hours</td>
+</tr>
+</table>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<div class="container">
+<div class="row g-4">
+<div class="col-12 col-md-6">
+<h2 class="contact-heading" id="contactTitle">Contact Us</h2>
+<p id="contactPhone">Phone: +92 33305072945</p>
+<p id="contactEmail">Email: info@gousiatransport.com</p>
+<p id="contactLocation">Karachi, Pakistan</p>
+</div>
+<div class="col-12 col-md-6">
+<form id="contactForm">
+  <input class="form-control mb-3" id="inputName" placeholder="Your Name" required>
+  <input class="form-control mb-3" id="inputPhone" placeholder="number" required>
+  <textarea class="form-control mb-3" id="inputMsg" placeholder="Message" rows="4" required></textarea>
+  <button class="btn btn-warning w-100" type="submit">Send Message</button>
+</form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // form reload rokta hai
+
+    // inputs check
+    let name = document.getElementById("inputName").value;
+    let phone = document.getElementById("inputPhone").value;
+    let msg = document.getElementById("inputMsg").value;
+
+    if(name && phone && msg){
+        alert("Your message has been sent successfully. Thank you!");
+        
+        // optional: form reset
+        document.getElementById("contactForm").reset();
+    }
+});
+</script>
+</div>
+</div>
+</div>
+</section>
+<section id="location">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.0050050634877!2d66.99972747442978!3d24.8636786451305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f002d06dfc5%3A0x77de548a9378a6b9!2sAll%20Ghousia%20Goods%20transport!5e0!3m2!1sen!2s!4v1773005093632!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<!-- FOOTER -->
+<section id="footer">
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5>About Us</h5>
+        <p>At ALL GOUSIA Transport Company, the customer always comes first. Our support team is ready to assist with queries, provide solutions for special delivery requests, and ensure that every interaction leaves you satisfied. We measure success not just by the number of parcels delivered but by the smiles we leave behind. If you’re happy, we’re happy — simple as that.</p>
+      </div>
+      
+     <div class="col-md-4">
+  <h5>Team Contacts</h5>
+  <ul class="footer-links">
+    <li>Karachi Manager: Suresh Kumar  <a href="tel:+92 3220251034"><br>+92 3220251034</a></li>
+    <li>Karachi Munshi: Eshwar Kumar  <a href="tel:+92 3305072945"><br>+92 3305072945</a></li>
+        <li>Sakaro Munshi: Nazer   <a href="tel:+92 3213953846"><br>+92 3213953846</a></li>
+    <li> bharo munshe Babo Palari: Munshi  <a href="tel:+92 3211939648"><br>+92 3211939648</a></li>
+    <li>Garo Munshi: Babo Palari  <a href="tel:+92 3211939648"><br>+92 3211939648</a></li>
+  </ul>
+</div>
+      
+      <div class="col-md-4">
+        <h5>Contact Info</h5>
+        <p><i class="bi bi-geo-alt"></i> Karachi, Pakistan</p>
+        <p><i class="bi bi-telephone"></i> +92 3220251034</p>
+        <p><i class="bi bi-envelope"></i> info@gousiatransport.com</p>
+        <p><i class="bi bi-clock"></i> Office Timing: 10:00 AM – 7:30 PM</p>
+        <p><i class="bi bi-calendar"></i> Monday – Saturday</p>
+        <p><i class="bi bi-box-seam"></i> Goods Booking Last Time: 7:30 PM</p>
+        <div class="social-icons">
+          <a href="https://wa.me/92 3305072945"><i class="bi bi-whatsapp"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+      
+    </div>
+    
+    
+  </div>
+  <div class="footer-bottom"> ALL GOUSIA TRANSPORT COMPANY GOODS </div>
+</div>
+</footer>
+</section>
+
+
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/923220251034" target="_blank" class="whatsapp-btn">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+let isEnglish = true;
+document.getElementById('langToggle').addEventListener('click', ()=>{
+    isEnglish = !isEnglish;
+    const e = isEnglish;
+    document.getElementById('langToggle').innerText = e ? 'Sindhi':'English';
+
+    // HERO
+    document.getElementById('heroTitle').innerText = e ? 
+      'All Gousia Company – Your Trust, Our Responsibility. 🤝🚚' : 
+      'الغوثیہ ڪمپني – توهان جو اعتماد، اسان جي ذميواري. 🤝🚚';
+    document.getElementById('heroLead').innerText = e ? 
+      '“Safe, Fast and Reliable Transport Service.”' : 
+      '“محفوظ، تيز ۽ قابل اعتماد ٽرانسپورٽ سروس.”';
+    document.getElementById('heroDesc').innerText = e ? 
+      '“We transport your goods and cargo safely from one place to another with fast and on-time delivery. Our mission is to provide our customers with the best transport service.” 🚚📦' : 
+      '“اسان توهان جا سامان ۽ ڪارگو محفوظ طريقي سان هڪ هنڌ کان ٻي هنڌ تائين پهچائيندا آهيون، تيز ۽ وقت تي پهچائڻ سان. اسان جو مقصد پنهنجي گراهڪن کي بهترين ٽرانسپورٽ سروس مهيا ڪرڻ آهي.” 🚚📦';
+    document.getElementById('bookNow').innerText = e ? 'Book Now':'بڪ ڪريو';
+
+    // SERVICES
+    document.getElementById('servicesTitle').innerText = e ? 'Our Services':'اسان جون خدمتون';
+    document.getElementById('service1').innerText = e ? 'Truck Transport':'ٽرڪ ٽرانسپورٽ';
+    document.getElementById('service1Desc').innerText = e ? 'Fast goods delivery across cities.':'شهرن ۾ تيز سامان پهچائڻ.';
+    document.getElementById('service2').innerText = e ? 'Cargo Delivery':'ڪارگو ڊليوري';
+    document.getElementById('service2Desc').innerText = e ? 'Professional cargo handling.':'پيشه ورانه ڪارگو هينڊلنگ.';
+    document.getElementById('service3').innerText = e ? 'Warehousing':'ويئر هائوسنگ';
+    document.getElementById('service3Desc').innerText = e ? 'Secure storage for goods.':'سامان لاءِ محفوظ اسٽوريج.';
+
+
+
+document.getElementById('rateTitle').innerText = e ? 'ALL Gousia Transport Rate List' : 'ٽرانسپورٽ ريٽ لسٽ';
+
+document.getElementById('thItem').innerText   = e ? 'ITEMS' : 'شيون';
+
+document.getElementById('thTruck').innerText  = e ? 'City' : 'شهر';
+
+document.getElementById('thOldPrice').innerText = e ? 'Old Price' : 'پراڻو ڀاڙو';
+
+document.getElementById('thNewPrice').innerText = e ? 'New Price' : 'نئون ڀاڙو';
+
+document.getElementById('thTime').innerText   = e ? 'Delivery Time' : 'پهچائڻ جو وقت';
+
+
+    // RATE LIST ROWS
+    const rateList = [
+  ['ketta RICE / DAL 50kg','sakaro/baharo/garo','PKR 140','PKR 180','24 hours'],
+  ['ketta RICE / DAL 25kg','sakaro/baharo/garo','PKR 70','PKR 90','24 hours'],
+  ['Ketta Shopper 25kg','sakaro/baharo/garo','PKR 120','PKR 150','24 hours'],
+  ['Ketta beaj or nimco','sakaro/baharo/garo','PKR 120','PKR 150','24 hours'],
+  ['ketta khajor','sakaro/baharo/garo','PKR 100','PKR 130','24 hours'],
+  ['bandel khajor','sakaro/baharo/garo','PKR 130','PKR 180','24 hours'],
+  ['bora akhbar','sakaro/baharo/garo','PKR 150','PKR 200','24 hours'],
+  ['bora Poli Tap','sakaro/baharo/garo','PKR 250','PKR 350','24 hours'],
+  ['bora lifafa kagaz theali 100kg','sakaro/baharo/garo','PKR 400','PKR 500','24 hours'],
+  ['bora keal','sakaro/baharo/garo','PKR 120','PKR 150','24 hours'],
+  ['bora tewa','sakaro/baharo/garo','PKR 200','PKR 250','24 hours'],
+  ['bora paper','sakaro/baharo/garo','PKR 400','PKR 500','24 hours'],
+  ['bandel chatai','sakaro/baharo/garo','PKR 300','PKR 400','24 hours'],
+  ['kartoun 1 wala','sakaro/baharo/garo','PKR 120','PKR 150','24 hours'],
+  ['kartoun 2 wala','sakaro/baharo/garo','PKR 150','PKR 180','24 hours'],
+  ['kartoun 3/4 wala','sakaro/baharo/garo','PKR 180','PKR 200','24 hours'],
+  ['bandel or bora kapera','sakaro/baharo/garo','PKR 400','PKR 500','24 hours'],
+  ['bandel balcha khodear','sakaro/baharo/garo','PKR 120','PKR 150','24 hours'],
+  ['bora rasi','sakaro/baharo/garo','PKR 300/400','PKR 500','24 hours'],
+];
+
+    const rateListSindhi = [
+      ['چانور / دال / ڪابلي چڻا 50ڪلو','ساکرو/بوھاڙو/گاڙھو','140 رپيا','180رپيا','24 ڪلاڪ'],
+      ['چانور / دال / ڪابلي چڻا 25ڪلو','ساکرو/بوھاڙو/گاڙھو','70 رپيا','90رپيا','24 ڪلاڪ'],
+      ['ڪيٽا شاپر 25ڪلو','ساکرو/بوھاڙو/گاڙھو','120 رپيا','150رپيا','24 ڪلاڪ'],
+      ['ڪيٽا بيج ۽ نمڪو','ساکرو/بوھاڙو/گاڙھو','120 رپيا','150رپيا','24 ڪلاڪ'],
+      ['ڪيٽا کجور','ساکرو/بوھاڙو/گاڙھو','100 رپيا','130رپيا','24 ڪلاڪ'],
+      ['بندل کجور','ساکرو/بوھاڙو/گاڙھو','130 رپيا','180رپيا','24 ڪلاڪ'],
+      ['بورا اخبار','ساکرو/بوھاڙو/گاڙھو','150 رپيا','200رپيا','24 ڪلاڪ'],
+      ['بورا پولي ٽيپ','ساکرو/بوھاڙو/گاڙھو','250 رپيا','350رپيا','24 ڪلاڪ'],
+      ['بورا لفافا ڪاغذ ٿيل 100ڪلو','ساکرو/بوھاڙو/گاڙھو','400 رپيا','500رپيا','24 ڪلاڪ'],
+      ['بورا ڪيل','ساکرو/بوھاڙو/گاڙھو','120 رپيا','150رپيا','24 ڪلاڪ'],
+      ['بورا ٽيوا','ساکرو/بوھاڙو/گاڙھو','200 رپيا','250رپيا','24 ڪلاڪ'],
+      ['بورا پيپر','ساکرو/بوھاڙو/گاڙھو','400 رپيا','500رپيا','24 ڪلاڪ'],
+      ['بندل چٽائي','ساکرو/بوھاڙو/گاڙھو','300 رپيا','400رپيا','24 ڪلاڪ'],
+      ['ڪارٽن 1 والا','ساکرو/بوھاڙو/گاڙھو','120 رپيا','150رپيا','24 ڪلاڪ'],
+      ['ڪارٽن 2 والا','ساکرو/بوھاڙو/گاڙھو','150 رپيا','180رپيا','24 ڪلاڪ'],
+      ['ڪارٽن 3/4 والا','ساکرو/بوھاڙو/گاڙھو','180 رپيا','200رپيا','24 ڪلاڪ'],
+      ['بندل ۽ بورا ڪپڙا','ساکرو/بوھاڙو/گاڙھو','400 رپيا','500رپيا','24 ڪلاڪ'],
+      ['بندل بلچا کوڏيار','ساکرو/بوھاڙو/گاڙھو','120 رپيا','150رپيا','24 ڪلاڪ'],
+      ['بورا رسي','ساکرو/بوھاڙو/گاڙھو','300/400 رپيا','500رپيا','24 ڪلاڪ'],
+      
+    ];
+
+    const tbody = document.querySelector('.table tbody');
+    tbody.innerHTML = '';
+    const listToUse = e ? rateList : rateListSindhi;
+    listToUse.forEach(row => {
+      const tr = document.createElement('tr');
+      row.forEach(col => {
+        const td = document.createElement('td');
+        td.innerText = col;
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+});
+</script>
+<script>
+
+</script>
+</body>
+</html>
